@@ -26,10 +26,6 @@ import configparser
 # Line訊息主系統
 from Line_MessageMain import Line_MessageMain
 
-from Mask_Search import Mask_Search
-
-Mask = Mask_Search()
-
 # configparser套件
 config = configparser.ConfigParser()
 config.read('key.ini')
