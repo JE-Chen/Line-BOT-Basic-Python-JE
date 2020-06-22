@@ -114,13 +114,6 @@ def handle_image_message(event):
 def handle_location_message(event):
     if (event.message.type == 'location'):
         print('location!')
-        lat = event.message.latitude
-        lng = event.message.longitude
-        Total = ''
-        for i in Mask.Return_Nearby(lng, lat):
-            Total += str(i) + '\n'
-        Line_Main.Reply_Message(event.reply_token, Total)
-
 
 @handler.add(MessageEvent, message=StickerMessage)
 def handle_sticker_message(event):
